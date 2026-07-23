@@ -7,5 +7,5 @@ export default function About() {
         login();
       },[])
 
-  return <h2>About Page I am success. </h2>;
+  return <h2> Raghava di CI connect About Page I am success. </h2>;
 }
