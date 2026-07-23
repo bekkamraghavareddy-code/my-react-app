@@ -7,5 +7,5 @@ export default function About() {
         login();
       },[])
 
-  return <h2>About Page</h2>;
+  return <h2>About Page I am success </h2>;
 }
