@@ -1,0 +1,93 @@
+/* Styles for About page */
+.about-page {
+  max-width: 980px;
+  margin: 2.5rem auto;
+  padding: 2.25rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+  color: #0f172a;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+}
+
+.about-page header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  letter-spacing: -0.5px;
+  color: #06283d;
+}
+
+.about-page .tagline {
+  margin: 0.5rem 0 0;
+  color: #334155;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.about-page section {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,252,255,0.6));
+  border-radius: 10px;
+  border: 1px solid rgba(99,102,241,0.06);
+}
+
+.about-page .mission h2,
+.about-page .what-we-do h2,
+.about-page .team h2,
+.about-page .cta h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #0b3a4a;
+}
+
+.about-page ul {
+  padding-left: 1.25rem;
+}
+
+.team-list {
+  display: flex;
+  gap: 1.125rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  min-width: 160px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.team-member strong {
+  display: block;
+  color: #0b3a4a;
+  margin-bottom: 0.25rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.email-link {
+  margin-left: 0.25rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .about-page {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .team-list {
+    flex-direction: column;
+  }
+}
