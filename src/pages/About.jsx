@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../globalvalues/AuthContext";
+import "./About.css";
 
 export default function About() {
   const { logout, login } = useContext(AuthContext);
@@ -8,13 +9,13 @@ export default function About() {
   }, []);
 
   return (
-    <main className="about-page" style={{ padding: "2rem", lineHeight: 1.6 }}>
+    <main className="about-page">
       <header>
         <h1>About Us</h1>
         <p className="tagline">Building thoughtful web experiences that help teams move faster.</p>
       </header>
 
-      <section className="mission" style={{ marginTop: "1rem" }}>
+      <section className="mission">
         <h2>Our Mission</h2>
         <p>
           We create reliable, user-centered software that solves real problems. Our focus is on clarity,
@@ -23,7 +24,7 @@ export default function About() {
         </p>
       </section>
 
-      <section className="what-we-do" style={{ marginTop: "1rem" }}>
+      <section className="what-we-do">
         <h2>What We Do</h2>
         <ul>
           <li>Design and build modern web applications</li>
@@ -32,30 +33,30 @@ export default function About() {
         </ul>
       </section>
 
-      <section className="team" style={{ marginTop: "1rem" }}>
+      <section className="team">
         <h2>Our Team</h2>
         <p>Small, cross-functional teams of designers and engineers who collaborate closely with customers.</p>
-        <div style={{ display: "flex", gap: "1.5rem", marginTop: "1rem" }}>
-          <div>
+        <div className="team-list">
+          <div className="team-member">
             <strong>Raghava</strong>
             <div>Founder &amp; CEO</div>
           </div>
-          <div>
+          <div className="team-member">
             <strong>Alice</strong>
             <div>Product Designer</div>
           </div>
-          <div>
+          <div className="team-member">
             <strong>Bob</strong>
             <div>Lead Engineer</div>
           </div>
         </div>
       </section>
 
-      <section className="cta" style={{ marginTop: "1.5rem" }}>
+      <section className="cta">
         <h2>Get in touch</h2>
         <p>
           If you'd like to learn more or work together, visit our contact page or email us at
-          <a href="mailto:hello@example.com" style={{ marginLeft: "0.25rem" }}>hello@example.com</a>.
+          <a href="mailto:hello@example.com" className="email-link">hello@example.com</a>.
         </p>
       </section>
     </main>
