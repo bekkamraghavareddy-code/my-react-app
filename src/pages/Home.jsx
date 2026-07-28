@@ -14,7 +14,6 @@ function Home() {
   const [addText, setAddText] = useState("");
   const handlecount = (count) => {
     setCount((count) => count + 1);
-
     localStorage.setItem('count', count);
 
   }
